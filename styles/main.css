@@ -1,0 +1,19 @@
+.commingSOOnBG {
+  background: url("/cs.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 480px) {
+  .commingSOOnBG {
+    background: url("/cs.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
