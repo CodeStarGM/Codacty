@@ -1,15 +1,16 @@
-import localFont from "next/font/local";
+import { Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -21,9 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.className} ${spaceGrotesk.variable} antialiased`}
       >
-        {children}
+        <nav className="h-[10vh] w-full bg-yellow-400">nav</nav>
+        <main>{children}</main>
       </body>
     </html>
   );
