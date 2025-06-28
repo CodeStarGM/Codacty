@@ -2,13 +2,16 @@ import Headings from "@/components/Headings";
 import {
   Bot,
   Camera,
+  ChartColumn,
   FileUser,
   GlobeLock,
   Handshake,
   KeyboardOff,
+  Link,
   MailWarning,
   MonitorSmartphone,
   MonitorX,
+  NotebookPen,
   NotepadText,
   ScanEye,
   ScanFace,
@@ -62,7 +65,7 @@ export default function Home() {
 
   return (
     <>
-      <div className=" py-20 text-white  bg-[#220032] flex flex-col space-y-10 items-center justify-center ">
+      <div className=" py-20 text-white  bg-primary flex flex-col space-y-10 items-center justify-center ">
         <div className="text-center relative">
           {/* images */}
           <img
@@ -102,10 +105,10 @@ export default function Home() {
             privacy.
           </p>
           <div className="space-x-4 ">
-            <button className="bg-primary px-8 py-2 rounded-full font-medium">
+            <button className="bg-secondary px-8 py-2 rounded-full font-medium">
               Claim Now
             </button>
-            <button className="border text-primary border-primary px-8 py-2 rounded-full font-medium">
+            <button className="border text-secondary border-secondary px-8 py-2 rounded-full font-medium">
               Learn More
             </button>
           </div>
@@ -297,6 +300,47 @@ export default function Home() {
         </div>
       </div>
       {/* solution statement */}
+
+      {/* how it work */}
+
+      <div className=" p-14">
+        <Headings title="How It Works" desc="Simple 3-Step Flow" />
+
+        <div className="grid grid-cols-3 gap-3 ">
+          <div
+            className={`bg-primary text-white rounded-3xl p-8 space-y-3 relative`}
+          >
+            <NotebookPen className="size-8" />
+            <h3 className="font-bold text-xl  ">1. Create a Test</h3>
+            <p className="">
+              Choose from our question library or import your own challenges in
+              minutes.
+            </p>
+          </div>
+
+          {/* 2nd */}
+          <div
+            className={`bg-primary text-white rounded-3xl p-8 space-y-3 relative`}
+          >
+            <Link className="size-8" />
+            <h3 className="font-bold text-xl  ">2. Invite Candidates</h3>
+            <p className="">
+              Send a secure link or use built-in email invites, no accounts
+              needed.
+            </p>
+          </div>
+          {/* 3rd */}
+          <div
+            className={`bg-primary text-white rounded-3xl p-8 space-y-3 relative`}
+          >
+            <ChartColumn className="size-8" />
+            <h3 className="font-bold text-xl  ">3. Get Results</h3>
+            <p className="">
+              See skill scores, cheat detection logs, and candidate shortlists.
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
