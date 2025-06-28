@@ -1,15 +1,10 @@
-import { Poppins, Space_Grotesk } from "next/font/google";
+import { Plus_Jakarta_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  weight: ["300", "400", "500", "600", "700"],
+const BricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-BG",
   subsets: ["latin"],
 });
 
@@ -22,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ${spaceGrotesk.variable} antialiased`}
+        className={`${plusJakartaSans.className} ${BricolageGrotesque.variable} antialiased`}
       >
         <nav className="h-[10vh] w-full bg-yellow-400">nav</nav>
         <main>{children}</main>
