@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="text-center text-xl font-extrabold font-[family-name:var(--font-BG)] pt-8">
+        <p className="text-center text-gray-600 text-xl font-extrabold font-[family-name:var(--font-BG)] pt-8">
           Companies think they have a hiring pipeline{" "}
           <span className="text-white bg-primary px-2 rounded py-1">
             problem
