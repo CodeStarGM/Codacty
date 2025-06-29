@@ -171,7 +171,11 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold text-darkText font-[family-name:var(--font-BG)]">
                   {" "}
-                  AI-Powered Cheat Detection
+                  AI-Powered{" "}
+                  <span className="text-white bg-red-500 px-2 rounded">
+                    Cheat
+                  </span>{" "}
+                  Detection
                 </h3>
                 <p className="text-gray-600 font-medium text-sm">
                   We don’t just record, we enforce.
@@ -223,7 +227,10 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl font-bold text-darkText font-[family-name:var(--font-BG)]">
                     {" "}
-                    Privacy-First by Design
+                    <span className="text-white bg-purple-500 px-2 rounded">
+                      Privacy-First
+                    </span>{" "}
+                    by Design
                   </h3>
                   <p className="text-gray-600 font-medium text-sm">
                     Security without surveillance.
@@ -272,7 +279,11 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl font-bold text-darkText leading-none pb-1">
                     {" "}
-                    Hire who can do the job, not <br /> just pass a filter.
+                    Hire who can{" "}
+                    <span className="text-white bg-pink-500 px-2 rounded">
+                      do the job
+                    </span>{" "}
+                    not <br /> just pass a filter.
                   </h3>
                   <p className="text-gray-600 font-medium text-sm">
                     Real Skill Insights.
