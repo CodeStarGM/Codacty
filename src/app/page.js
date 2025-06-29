@@ -167,8 +167,8 @@ export default function Home() {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="space-y-4">
-              <div>
+            <div className="space-y-4 lg:w-[50%]">
+              <div className="">
                 <h3 className="text-2xl font-bold text-darkText font-[family-name:var(--font-BG)]">
                   {" "}
                   AI-Powered{" "}
@@ -181,30 +181,13 @@ export default function Home() {
                   We don’t just record, we enforce.
                 </p>
               </div>
-              <ul className=" font-medium space-y-2 tracking-tight">
-                <li className="flex items-center space-x-2">
-                  <ScanEye className="size-5" />
-                  <span>
-                    Eye and gesture tracking to detect suspicious movement
-                  </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Camera className="size-5" />
-                  <span>
-                    No stored video, no screenshots, just real-time AI signals
-                  </span>
-                </li>
 
-                <li className="flex items-center space-x-2">
-                  <KeyboardOff className="size-5" />
-                  <span>Locks tab, clipboard, and keyboard shortcuts </span>
-                </li>
-
-                <li className="flex items-center space-x-2">
-                  <MonitorSmartphone className="size-5" />
-                  <span>Flags second-device behavior instantly </span>
-                </li>
-              </ul>
+              <p className="font-medium  text-gray-800 ">
+                Codacty uses smart eye and gesture tracking to catch suspicious
+                behavior in real time without recording video or taking
+                screenshots. We lock tabs, block shortcuts, and instantly flag
+                second devices, so you can trust every result.
+              </p>
 
               <div className="w-fit px-6 py-2 border-r-[2px] text-green-800 border-l-[2px] border-green-500 bg-green-500/10">
                 <p className="font-medium">
@@ -236,29 +219,12 @@ export default function Home() {
                     Security without surveillance.
                   </p>
                 </div>
-                <ul className=" font-medium space-y-2 ">
-                  <li className="flex items-center space-x-2">
-                    <GlobeLock className="size-5" />
-                    <span>Fully GDPR & CCPA compliant</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <Camera className="size-5" />
-                    <span>No invasive recordings or screenshots</span>
-                  </li>
-
-                  <li className="flex items-start space-x-2 ">
-                    <Handshake className="size-5" />
-                    <span>
-                      Candidate data stays in their hands, & out of your
-                      liability zone
-                    </span>
-                  </li>
-
-                  <li className="flex items-center space-x-2">
-                    <ShieldUser className="size-5" />
-                    <span>Designed for privacy-conscious developers</span>
-                  </li>
-                </ul>
+                <p className="font-medium  text-gray-800 ">
+                  Codacty keeps everything private and is fully GDPR and CCPA
+                  compliant. We never record videos or take screenshots. All
+                  candidate information stays safe and under their control, so
+                  you don’t have to worry about privacy issues.
+                </p>
 
                 <div className="w-fit px-6 py-2 border-r-[2px] text-green-800 border-l-[2px] border-green-500 bg-green-500/10">
                   <p className="font-medium">We win trust by respecting it.</p>
@@ -289,32 +255,13 @@ export default function Home() {
                     Real Skill Insights.
                   </p>
                 </div>
-                <ul className=" font-medium space-y-2 tracking-tight">
-                  <li className="flex items-center space-x-2">
-                    <NotepadText className="size-5" />
-                    <span>
-                      Clean, readable score reports and cheat activity logs
-                    </span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <ShieldCheck className="size-5" />
-                    <span>
-                      Automatically shortlists only qualified candidates
-                    </span>
-                  </li>
 
-                  <li className="flex items-center space-x-2">
-                    <FileUser className="size-5" />
-                    <span>
-                      See resumes only for candidates who meet your criteria
-                    </span>
-                  </li>
-
-                  <li className="flex items-center space-x-2">
-                    <Users className="size-5" />
-                    <span>Zero effort for your team </span>
-                  </li>
-                </ul>
+                <p className="font-medium  text-gray-800 ">
+                  Codacty gives you clear assessment results and shows any
+                  cheating activity. It automatically picks out the best
+                  candidates and only shows you resumes that match what you
+                  need. No extra work for your team.
+                </p>
 
                 <div className="w-fit px-6 py-2 border-r-[2px] text-green-800 border-l-[2px] border-green-500 bg-green-500/10">
                   <p className="font-medium">
