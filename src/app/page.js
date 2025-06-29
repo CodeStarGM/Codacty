@@ -27,38 +27,38 @@ export default function Home() {
     {
       title: "ATS systems reject great candidates",
       desc: "One formatting error and you're out, no evaluation of actual skill.",
-      icon: <MonitorX className="size-8" />,
+      icon: <MonitorX className="size-6" />,
       bgClr: "bg-red-500/5",
     },
 
     {
       title: "Cheating is easier than ever",
       desc: "Second screens, phones, ChatGPT, and most tools never catch it.",
-      icon: <Bot className="size-8" />,
+      icon: <Bot className="size-6" />,
       bgClr: "bg-cyan-500/5",
     },
     {
       title: "Camera-only monitoring doesn’t stop cheaters",
       desc: "It looks like proctoring. It’s not. People look off-screen all the time — and still pass.",
-      icon: <ScanEye className="size-8" />,
+      icon: <ScanEye className="size-6" />,
       bgClr: "bg-purple-500/5",
     },
     {
       title: "Recruiters waste hours screening manually",
       desc: "Even when someone passes, your team spends hours reviewing basic skills.",
-      icon: <UserRoundSearch className="size-8" />,
+      icon: <UserRoundSearch className="size-6" />,
       bgClr: "bg-emerald-500/5",
     },
     {
       title: "Top candidates drop off when asked to record themselves",
       desc: "Surveillance-style assessments scare off your best, introverted, or privacy-aware talent.",
-      icon: <ScanFace className="size-8" />,
+      icon: <ScanFace className="size-6" />,
       bgClr: "bg-pink-500/5",
     },
     {
       title: " Rejecting at scale becomes expensive and messy",
       desc: "Sending thousands of rejection emails every week costs money, creates inbox issues, and burdens your ops team.",
-      icon: <MailWarning className="size-8" />,
+      icon: <MailWarning className="size-6" />,
       bgClr: "bg-orange-500/5",
     },
   ];
@@ -127,31 +127,40 @@ export default function Home() {
           {problemStatements.map((data, index) => (
             <div
               key={index}
-              className={`${data.bgClr} rounded-3xl p-8 space-y-3`}
+              className={`hover:bg-gray-50  rounded-3xl p-8 space-x-2 flex items-start`}
             >
-              {data.icon}
-              <h3 className="font-bold text-xl  ">{data.title}</h3>
-              <p className="">{data.desc}</p>
+              <div> {data.icon}</div>
+              <div className="space-y-1">
+                <h3 className="font-bold  text-gray-800 ">{data.title}</h3>
+                <p className="text-sm text-gray-700">{data.desc}</p>
+              </div>
             </div>
           ))}
         </div>
-        <p className="text-5xl font-extrabold font-[family-name:var(--font-space-grotesk)] pt-8">
-          Companies think they have a hiring pipeline problem. What they really
-          have is a broken filter.
+        <p className="text-center text-xl font-extrabold font-[family-name:var(--font-BG)] pt-8">
+          Companies think they have a hiring pipeline{" "}
+          <span className="text-white bg-primary px-2 rounded py-1">
+            problem
+          </span>{" "}
+          What they really have is a{" "}
+          <span className="text-white bg-primary px-2 rounded py-1">
+            broken
+          </span>{" "}
+          filter.
         </p>
       </div>
 
       {/* problem statement */}
 
-      {/* solution statement */}
-      <div className=" p-14">
+      {/* bento solution statement */}
+      <div className=" py-14 px-40">
         <Headings
           title="How we fixes technical hiring"
           desc="We built what today’s hiring tools forgot: trust, accuracy, & privacy"
         />
 
-        <div className="space-y-28">
-          <div className="flex items-center justify-center lg:flex-row flex-col gap-8">
+        <div className="space-y-2">
+          <div className="flex bg-[#F7F7F7] border items-center justify-around lg:flex-row-reverse flex-col gap-8 p-8 rounded-3xl ">
             <div className=" lg:w-[40%] lg:h-[40vh] rounded-2xl relative overflow-hidden">
               <img
                 src="/fix1.png"
@@ -193,7 +202,7 @@ export default function Home() {
                 </li>
               </ul>
 
-              <div className="w-fit px-6 py-2 border-r-[2px] text-purple-800 border-l-[2px] border-purple-500 bg-purple-500/10">
+              <div className="w-fit px-6 py-2 border-r-[2px] text-green-800 border-l-[2px] border-green-500 bg-green-500/10">
                 <p className="font-medium">
                   If you can cheat our tests, you deserve the job.
                 </p>
@@ -201,99 +210,106 @@ export default function Home() {
             </div>
           </div>
 
-          {/* section2 */}
-          <div className="flex items-center justify-center lg:flex-row-reverse flex-col gap-8">
-            <div className="lg:w-[40%] lg:h-[40vh] rounded-2xl relative overflow-hidden">
-              <img
-                src="/fix2.png"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div className="space-y-4 ">
-              <div>
-                <h3 className="text-2xl font-bold text-darkText font-[family-name:var(--font-BG)]">
-                  {" "}
-                  Privacy-First by Design
-                </h3>
-                <p className="text-gray-600 font-medium text-sm">
-                  Security without surveillance.
-                </p>
+          <div className="w-full gap-2 flex items-start justify-between">
+            {/* section2 */}
+            <div className="bg-[#F7F7F7] border w-full rounded-3xl p-6 flex items-center justify-center flex-col-reverse gap-8 h-full">
+              <div className="w-full lg:h-[30vh] rounded-2xl relative overflow-hidden">
+                <img
+                  src="/fix2.png"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              <ul className=" font-medium space-y-2 ">
-                <li className="flex items-center space-x-2">
-                  <GlobeLock className="size-5" />
-                  <span>Fully GDPR & CCPA compliant</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Camera className="size-5" />
-                  <span>No invasive recordings or screenshots</span>
-                </li>
+              <div className="space-y-4 ">
+                <div>
+                  <h3 className="text-2xl font-bold text-darkText font-[family-name:var(--font-BG)]">
+                    {" "}
+                    Privacy-First by Design
+                  </h3>
+                  <p className="text-gray-600 font-medium text-sm">
+                    Security without surveillance.
+                  </p>
+                </div>
+                <ul className=" font-medium space-y-2 ">
+                  <li className="flex items-center space-x-2">
+                    <GlobeLock className="size-5" />
+                    <span>Fully GDPR & CCPA compliant</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <Camera className="size-5" />
+                    <span>No invasive recordings or screenshots</span>
+                  </li>
 
-                <li className="flex items-start space-x-2 tracking-tight">
-                  <Handshake className="size-5" />
-                  <span>
-                    Candidate data stays in their hands, & out of your liability
-                    zone
-                  </span>
-                </li>
+                  <li className="flex items-start space-x-2 ">
+                    <Handshake className="size-5" />
+                    <span>
+                      Candidate data stays in their hands, & out of your
+                      liability zone
+                    </span>
+                  </li>
 
-                <li className="flex items-center space-x-2">
-                  <ShieldUser className="size-5" />
-                  <span>Designed for privacy-conscious developers</span>
-                </li>
-              </ul>
+                  <li className="flex items-center space-x-2">
+                    <ShieldUser className="size-5" />
+                    <span>Designed for privacy-conscious developers</span>
+                  </li>
+                </ul>
 
-              <div className="w-fit px-6 py-2 border-r-[2px] text-purple-800 border-l-[2px] border-purple-500 bg-purple-500/10">
-                <p className="font-medium">We win trust by respecting it.</p>
+                <div className="w-fit px-6 py-2 border-r-[2px] text-green-800 border-l-[2px] border-green-500 bg-green-500/10">
+                  <p className="font-medium">We win trust by respecting it.</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* section3 */}
+            {/* section3 */}
 
-          <div className="flex items-center justify-center lg:flex-row flex-col gap-8">
-            <div className=" lg:w-[40%] lg:h-[40vh] rounded-2xl relative overflow-hidden">
-              <img src="/fix3.jpeg" className="object-cover h-full w-full" />
-            </div>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-2xl font-bold text-darkText font-[family-name:var(--font-BG)]">
-                  {" "}
-                  Hire who can do the job, not <br /> just pass a filter.
-                </h3>
-                <p className="text-gray-600 font-medium text-sm">
-                  Real Skill Insights
-                </p>
+            <div className="bg-[#F7F7F7] border w-full rounded-3xl p-6 flex items-center justify-center flex-col-reverse gap-8 h-full">
+              <div className="w-full lg:h-[30vh] rounded-2xl relative overflow-hidden">
+                <img
+                  src="/fix3.jpeg"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              <ul className=" font-medium space-y-2 tracking-tight">
-                <li className="flex items-center space-x-2">
-                  <NotepadText className="size-5" />
-                  <span>
-                    Clean, readable score reports and cheat activity logs
-                  </span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <ShieldCheck className="size-5" />
-                  <span>
-                    Automatically shortlists only qualified candidates
-                  </span>
-                </li>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-darkText leading-none pb-1">
+                    {" "}
+                    Hire who can do the job, not <br /> just pass a filter.
+                  </h3>
+                  <p className="text-gray-600 font-medium text-sm">
+                    Real Skill Insights.
+                  </p>
+                </div>
+                <ul className=" font-medium space-y-2 tracking-tight">
+                  <li className="flex items-center space-x-2">
+                    <NotepadText className="size-5" />
+                    <span>
+                      Clean, readable score reports and cheat activity logs
+                    </span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <ShieldCheck className="size-5" />
+                    <span>
+                      Automatically shortlists only qualified candidates
+                    </span>
+                  </li>
 
-                <li className="flex items-center space-x-2">
-                  <FileUser className="size-5" />
-                  <span>
-                    See resumes only for candidates who meet your criteria
-                  </span>
-                </li>
+                  <li className="flex items-center space-x-2">
+                    <FileUser className="size-5" />
+                    <span>
+                      See resumes only for candidates who meet your criteria
+                    </span>
+                  </li>
 
-                <li className="flex items-center space-x-2">
-                  <Users className="size-5" />
-                  <span>Zero effort for your team </span>
-                </li>
-              </ul>
+                  <li className="flex items-center space-x-2">
+                    <Users className="size-5" />
+                    <span>Zero effort for your team </span>
+                  </li>
+                </ul>
 
-              <div className="w-fit px-6 py-2 border-r-[2px] text-purple-800 border-l-[2px] border-purple-500 bg-purple-500/10">
-                <p className="font-medium">No fluff, No filters, Just proof.</p>
+                <div className="w-fit px-6 py-2 border-r-[2px] text-green-800 border-l-[2px] border-green-500 bg-green-500/10">
+                  <p className="font-medium">
+                    No fluff, No filters, Just proof.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -303,40 +319,58 @@ export default function Home() {
 
       {/* how it work */}
 
-      <div className=" p-14">
-        <Headings title="How It Works" desc="Simple 3-Step Flow" />
+      <div className=" py-14 px-20">
+        <div className="flex items-start justify-between">
+          <div className="space-y-2">
+            <h3 className="text-gray-800 text-5xl font-extrabold ">
+              How it works?
+            </h3>
+            <p className="font-medium text-gray-700 text-balance">
+              You don’t need to review endless resumes or play ATS games that
+              filter out great people for the wrong reasons. Just cut the noise
+              and get resumes only for candidates who actually prove they’re
+              qualified to do the work.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-3 gap-3 ">
-          <div
-            className={`bg-primary text-white rounded-3xl p-8 space-y-3 relative`}
-          >
-            <NotebookPen className="size-8" />
-            <h3 className="font-bold text-xl  ">1. Create a Test</h3>
-            <p className="">
+          <div>
+            <img src="/abstractSquare.png" className="rounded-3xl" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-3 gap-3 py-10">
+          <div className=" font-[family-name:var(--font-BG)]">
+            <h3 className="font-bold  text-darkText text-xl">
+              <span className="text-5xl font-extrabold text-pink-500">1.</span>{" "}
+              Create a Test
+            </h3>
+            <p className="font-medium text-gray-700 text-balance">
               Choose from our question library or import your own challenges in
               minutes.
             </p>
           </div>
-
           {/* 2nd */}
-          <div
-            className={`bg-primary text-white rounded-3xl p-8 space-y-3 relative`}
-          >
-            <Link className="size-8" />
-            <h3 className="font-bold text-xl  ">2. Invite Candidates</h3>
-            <p className="">
-              Send a secure link or use built-in email invites, no accounts
-              needed.
+          <div className=" font-[family-name:var(--font-BG)]">
+            <h3 className="font-bold  text-darkText text-xl">
+              <span className="text-5xl font-extrabold text-purple-500">
+                2.{" "}
+              </span>
+              Invite Candidates
+            </h3>
+            <p className="font-medium text-gray-700 text-balance">
+              Generate a secure link and share it with candidates, or send the
+              assessment by email.
             </p>
           </div>
           {/* 3rd */}
-          <div
-            className={`bg-primary text-white rounded-3xl p-8 space-y-3 relative`}
-          >
-            <ChartColumn className="size-8" />
-            <h3 className="font-bold text-xl  ">3. Get Results</h3>
-            <p className="">
-              See skill scores, cheat detection logs, and candidate shortlists.
+          <div className=" font-[family-name:var(--font-BG)]">
+            <h3 className="font-bold  text-darkText text-xl">
+              <span className="text-5xl font-extrabold text-green-500">3.</span>{" "}
+              Get Results
+            </h3>
+            <p className="font-medium text-gray-700 text-balance">
+              View scores, see any cheating alerts, and download your shortlist,
+              all in one place.
             </p>
           </div>
         </div>
