@@ -1,3 +1,4 @@
+import Features from "@/components/Features";
 import Headings from "@/components/Headings";
 import {
   Bot,
@@ -333,6 +334,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Features />
     </>
   );
 }
