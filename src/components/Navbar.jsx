@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { CircleX, LoaderPinwheel, Menu } from "lucide-react";
 
 export default function Navbar() {
-  const [toggleMobileMenu, setToggleMobileMenu] = useState(true);
+  const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
   const navigationLinks = [
     {
