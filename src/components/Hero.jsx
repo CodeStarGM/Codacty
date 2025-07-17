@@ -1,55 +1,64 @@
+import { LoaderPinwheel } from "lucide-react";
 import React from "react";
 
 export default function Hero() {
+  const navigationLinks = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "About",
+      href: "/",
+    },
+    {
+      name: "How it works",
+      href: "/",
+    },
+    {
+      name: "Pricing",
+      href: "/",
+    },
+    {
+      name: "Contact",
+      href: "/",
+    },
+  ];
+
   return (
     <>
-      <div className=" py-20 text-white  bg-primary flex flex-col space-y-10 items-center justify-center ">
-        <div className="text-center relative">
-          {/* images */}
-          <img
-            src="/person1.png"
-            className="absolute  w-[17%] -left-[24%] -top-[10%]"
-          />
-          <img
-            src="/person2.png"
-            className="absolute w-[10%] -left-[15%] -bottom-[10%]"
-          />
-          <img
-            src="/person3.png"
-            className="absolute w-[10%] -right-[20%] top-[10%]"
-          />
-          <img
-            src="/heartface.png"
-            className="absolute w-[10%] -right-[2%] bottom-[2%]"
-          />
+      <div className="w-screen h-screen p-2">
+        <div className="w-full h-full bg-gradient-to-br from-[#FFDDDE] via-[#FFF1BD] to-[#FFD84A] border rounded-3xl flex flex-col items-center justify-start py-4">
+          <nav className="bg-[#ffffff33] backdrop-blur-lg shadow-sm border border-[#2900291c] rounded-2xl px-2 py-2 flex items-center justify-between w-[90%]">
+            <div className="flex items-center gap-2 ">
+              <LoaderPinwheel className="size-8" />
+              <p className="font-[family-name:var(--font-kaio)] text-2xl">
+                Codacty
+              </p>
+            </div>
 
-          {/* images */}
+            <ul className="flex items-center gap-2">
+              {navigationLinks.map((item, index) => (
+                <li
+                  key={index}
+                  className="hover:bg-black/5 text-[15px] text-[#240029]/90 cursor-pointer px-2 py-1 rounded-lg transition-all duration-300"
+                >
+                  {item.name}
+                </li>
+              ))}
+            </ul>
 
-          <span className="font-normal font-[family-name:var(--font-space-grotesk)]">
-            {" "}
-            AI-powered, Cheat-proof, Privacy-first,
-          </span>
-          <h1 className="font-extrabold text-7xl text-center relative ">
-            We make cheating <br />
-            in tech interviews <br />{" "}
-            <span className="text-8xl">Impossible</span>
-          </h1>
-        </div>
+            {/* cta buttons nav */}
 
-        <div className="flex items-center justify-center flex-col">
-          <p className="w-[70%] text-sm pb-10 text-center ">
-            Codacty runs cheat-proof, AI-powered technical assessments that
-            spotlight real skill, without storing video or invading candidate
-            privacy.
-          </p>
-          <div className="space-x-4 ">
-            <button className="bg-secondary px-8 py-2 rounded-full font-medium">
-              Claim Now
-            </button>
-            <button className="border text-secondary border-secondary px-8 py-2 rounded-full font-medium">
-              Learn More
-            </button>
-          </div>
+            <div className="gap-2 flex items-center">
+              <button className="text-[#240029] text-[15px] font-medium px-2.5 py-1 rounded-lg border border-[#CCB2BA] bg-white">
+                Log in
+              </button>
+              <button className="px-2.5 py-1 text-[15px] font-medium rounded-lg border border-[#D4AA53] text-[#240029] bg-[#fc1]">
+                Sign up
+              </button>
+            </div>
+          </nav>
         </div>
       </div>
     </>
