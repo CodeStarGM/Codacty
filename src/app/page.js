@@ -1,21 +1,12 @@
-import Features from "@/components/Features";
-import Headings from "@/components/Headings";
-import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
-import Problems from "@/components/Problems";
-import Solutions from "@/components/Solutions";
+
+import Hero from "@/sections/Hero";
+
 
 export default function Home() {
   return (
     <>
       <Hero />
-      {/* <Problems />
-
-      <Solutions />
-
-      <HowItWorks />
-
-      <Features /> */}
+   
     </>
   );
 }
