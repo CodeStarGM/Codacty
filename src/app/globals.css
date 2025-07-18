@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
 .gradient-box {
   background-image: linear-gradient(50deg, #b94cdb, #e26092 52%, #fe815e);
 }
