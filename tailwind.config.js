@@ -13,6 +13,7 @@ module.exports = {
         secondary: "#FF4081",
         darkText: "#252525",
         borderClr: "#CCB2BA",
+        purp: "#240029",
       },
     },
   },
