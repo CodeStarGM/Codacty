@@ -99,7 +99,7 @@ export default function Hero() {
                     <img
                       key={index}
                       src={tool.logo}
-                      className=" rounded-full size-12"
+                      className=" rounded-full size-10 md:size-12"
                     />
                   </div>
                 ))}
