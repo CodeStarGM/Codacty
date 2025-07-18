@@ -95,9 +95,7 @@ export default function Solution() {
               <p>🧘 No video recordings, no screenshots ever</p>
               <p>👁️‍🗨️ Smart tracking that respects boundaries</p>
               <p>🧾 Fully GDPR & CCPA compliant</p>
-              <p>
-                🚫 Candidate data stays with them not in your liability zone
-              </p>
+              <p>📁 Candidate data is never stored unnecessarily</p>
               <p></p>
               <p></p>
             </div>
