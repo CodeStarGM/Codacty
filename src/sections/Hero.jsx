@@ -3,6 +3,41 @@ import Navbar from "@/components/Navbar";
 import React from "react";
 
 export default function Hero() {
+  const CheatTools = [
+    {
+      name: "ChatGPT",
+      logo: "/ctools/1.png",
+    },
+    {
+      name: "Gemini",
+      logo: "/ctools/2.png",
+    },
+    {
+      name: "Cluely",
+      logo: "/ctools/3.png",
+    },
+    {
+      name: "Interview Coder",
+      logo: "/ctools/4.png",
+    },
+    {
+      name: "Claude AI",
+      logo: "/ctools/5.png",
+    },
+    {
+      name: "Perplexity AI",
+      logo: "/ctools/6.png",
+    },
+    {
+      name: "Cursor AI",
+      logo: "/ctools/7.png",
+    },
+    {
+      name: "and many more",
+      logo: "/ctools/8.png",
+    },
+  ];
+
   return (
     <>
       <div className=" w-full h-full p-2">
@@ -25,33 +60,49 @@ export default function Hero() {
               in tech interviews <br /> <span className="">Impossible</span>
             </h1>
 
-            <h2 className="text-[#6E4D59] text-lg text-pretty max-w-xl md:max-w-4xl mx-auto text-center">
-              Codacty runs cheat-proof, AI-powered technical assessments that
-              spotlight real skill, without storing video or invading candidate
-              privacy.
+            <h2 className="text-[#6E4D59] text-xl text-pretty max-w-xl md:max-w-4xl mx-auto text-center">
+              Technical hiring is <strong>broken</strong>, 52% of candidates now
+              use <strong>AI</strong> or second devices to{" "}
+              <strong>cheat</strong> on assessments. Our platform makes that
+              nearly <strong>Impossible</strong> - while fully respecting
+              <strong> candidate privacy.</strong>
+              <br />
+              Find truly skilled engineers through smart, secure, and
+              <strong> cheat-resistant</strong> assessments, no video
+              recordings, no resume noise, just qualified talent.
             </h2>
 
-            <div className="gap-4 flex items-center">
-              <button className="px-4 py-2  font-medium rounded-lg border border-[#D4AA53] text-[#240029] bg-[#fc1]">
-                Sign up for free
-              </button>
-              <button className="text-[#240029]  font-medium px-4 py-2 rounded-lg border border-[#CCB2BA] bg-white">
-                Founder Story?
+            <div className="w-fit flex items-center rounded-full">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Business Email"
+                className="outline-none py-2 px-4 rounded-l-full border border-borderClr"
+              />
+              <button className="px-4 py-2  font-medium rounded-r-full border border-[#D4AA53] text-[#240029] bg-[#fc1]">
+                Join Waitlist
               </button>
             </div>
 
             {/* companies section */}
             <div className="space-y-4">
               <p className="text-[#6E4D59] text-sm text-center">
-                Integrate with nearly any tool or framework under the sun
+                Protected against the most common AI cheating tools and tactics.
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8">
-                <img src="/person2.png" className="size-12 rounded-full" />
-                <img src="/person2.png" className="size-12 rounded-full" />
-                <img src="/person2.png" className="size-12 rounded-full" />
-                <img src="/person2.png" className="size-12 rounded-full" />
-                <img src="/person2.png" className="size-12 rounded-full" />
-                <img src="/person2.png" className="size-12 rounded-full" />
+              <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
+                {CheatTools.map((tool, index) => (
+                  <div class="has-tooltip">
+                    <span class="tooltip rounded-full shadow-lg px-3 py-1 bg-[#240029] text-[#fc1] font-medium -ml-4 -mt-10">
+                      {tool.name}
+                    </span>
+                    <img
+                      key={index}
+                      src={tool.logo}
+                      className=" rounded-full size-12"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
