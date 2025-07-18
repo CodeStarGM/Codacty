@@ -70,8 +70,6 @@ export default function Solution() {
               <p>📄 View resumes after passing the test, not before</p>
               <p>📊 Auto-shortlisting based on verified skill, not hype</p>
               <p>🤖 Zero manual review needed just the real talent</p>
-              <p></p>
-              <p></p>
             </div>
 
             <div className="border-l-4 pl-4 border-purple-500 bg-purple-500/10 rounded-md py-4">
@@ -96,8 +94,6 @@ export default function Solution() {
               <p>👁️‍🗨️ Smart tracking that respects boundaries</p>
               <p>🧾 Fully GDPR & CCPA compliant</p>
               <p>📁 Candidate data is never stored unnecessarily</p>
-              <p></p>
-              <p></p>
             </div>
 
             <div className="border-l-4 pl-4 border-green-500 bg-green-500/10 rounded-md py-4">
