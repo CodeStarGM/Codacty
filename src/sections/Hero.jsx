@@ -66,10 +66,6 @@ export default function Hero() {
               <strong>cheat</strong> on assessments. Our platform makes that
               nearly <strong>Impossible</strong> - while fully respecting
               <strong> candidate privacy.</strong>
-              <br />
-              Find truly skilled engineers through smart, secure, and
-              <strong> cheat-resistant</strong> assessments, no video
-              recordings, no resume noise, just qualified talent.
             </h2>
 
             <div className="w-fit flex items-center rounded-full">
