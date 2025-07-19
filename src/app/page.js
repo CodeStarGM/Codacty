@@ -1,3 +1,4 @@
+import Cheated from "@/sections/Cheated";
 import Hero from "@/sections/Hero";
 import Problem from "@/sections/Problem";
 import Solution from "@/sections/Solution";
@@ -8,6 +9,8 @@ export default function Home() {
       <Hero />
 
       <Problem />
+
+      <Cheated />
 
       <Solution />
     </>
