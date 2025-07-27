@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { CircleX, LoaderPinwheel, Menu } from "lucide-react";
+import { CircleX, LoaderPinwheel, Menu, MoveRight } from "lucide-react";
 
 export default function Navbar() {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
@@ -84,11 +84,12 @@ export default function Navbar() {
         {/* cta buttons nav */}
 
         <div className="gap-2 flex items-center">
-          <button className="text-[#240029] text-[15px] font-medium px-2.5 py-1 rounded-lg border border-[#CCB2BA] bg-white">
+          {/* <button className="text-[#240029] text-[15px] font-medium px-2.5 py-1 rounded-lg border border-[#CCB2BA] bg-white">
             Log in
-          </button>
-          <button className="px-2.5 py-1 text-[15px] font-medium rounded-lg border border-[#D4AA53] text-[#240029] bg-[#fc1]">
-            Sign up
+          </button> */}
+          <button className="px-4 py-1 text-[15px] font-medium rounded-lg border border-[#D4AA53] text-[#240029] bg-[#fc1] flex items-center space-x-1 group">
+            <span>Join Now</span>
+            <MoveRight className="group-hover:translate-x-2 transition-all duration-300" />
           </button>
 
           <button
