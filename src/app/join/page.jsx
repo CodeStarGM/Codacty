@@ -4,14 +4,14 @@ import { LoaderPinwheel, Menu, MoveRight } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-import React from "react";
+import React, { Suspense } from "react";
 
 export default function JoinWaitlist() {
   const searchParams = useSearchParams();
   const businessEmail = searchParams.get("be");
 
   return (
-    <>
+    <Suspense>
       <div className=" w-full h-full p-2">
         <div className="w-full h-full bg-gradient-to-br from-[#FFDDDE] via-[#FFF1BD] to-[#FFD84A] border rounded-3xl flex flex-col items-center justify-start py-2 md:py-4">
           {/* navbar start */}
@@ -190,6 +190,6 @@ export default function JoinWaitlist() {
           {/* hero content */}
         </div>
       </div>
-    </>
+    </Suspense>
   );
 }
