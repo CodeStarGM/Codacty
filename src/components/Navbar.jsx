@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { CircleX, LoaderPinwheel, Menu, MoveRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
   const navigationLinks = [
     {
-      name: "Home",
-      href: "/",
+      name: "Problem",
+      href: "#problem",
     },
     {
       name: "About",
@@ -56,7 +57,10 @@ export default function Navbar() {
                   key={index}
                   className="hover:bg-black/5 text-lg text-[#240029]/90 cursor-pointer px-2 py-1 rounded-lg transition-all duration-300"
                 >
-                  {item.name}
+                  <Link href={item.href} className="h-full w-full">
+                    {" "}
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,9 +78,12 @@ export default function Navbar() {
           {navigationLinks.map((item, index) => (
             <li
               key={index}
-              className="hover:bg-black/5 text-[15px] text-[#240029]/90 cursor-pointer px-2 py-1 rounded-lg transition-all duration-300"
+              className="hover:bg-black/5 text-sm text-[#240029]/90 cursor-pointer px-2 py-1 rounded-lg transition-all duration-300"
             >
-              {item.name}
+              <Link href={item.href} className="h-full w-full">
+                {" "}
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
