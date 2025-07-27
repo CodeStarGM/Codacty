@@ -1,3 +1,4 @@
+import { LoaderPinwheel } from "lucide-react";
 import React from "react";
 
 export default function Footer() {
@@ -6,8 +7,8 @@ export default function Footer() {
       <footer className="bg-gray-50 text-gray-900 px-10 py-4">
         <div className=" mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Left: Vibe Line */}
-          <div className="flex items-center gap-6 text-sm ">
-            <div className="bg-red-400 rounded-full size-10" />
+          <div className="flex items-center lg:flex-row flex-col gap-6 text-sm ">
+            <LoaderPinwheel className="size-10" />
             <p className="text-center md:text-left text-sm text-gray-500">
               Fake candidates hate us. Real teams love us.
             </p>
