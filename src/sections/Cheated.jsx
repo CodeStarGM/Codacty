@@ -3,7 +3,7 @@ import React from "react";
 export default function Cheated() {
   return (
     <section>
-      <div className="bg-[#240029] text-white border flex flex-col items-center border-purple-900 py-20 px-10 w-full space-y-10">
+      <div className="bg-[#240029] text-white border flex flex-col items-center border-purple-900 py-20 px-4 lg:px-10 w-full space-y-10">
         {/* Heading */}
         <div className="text-center space-y-2">
           <h2 className="text-5xl font-bold font-[family-name:var(--font-kaio)]">
