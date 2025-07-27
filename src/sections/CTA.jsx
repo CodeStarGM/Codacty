@@ -1,6 +1,11 @@
-import React from "react";
+"use client";
+
+import Navbar from "@/components/Navbar";
+import Link from "next/link";
+import React, { useState } from "react";
 
 export default function CTA() {
+  const [email, setEmail] = useState("");
   return (
     <>
       <section className="bg-gradient-to-br from-[#FFDDDE] via-[#FFF1BD] to-[#FFD84A] border rounded-3xl text-gray-900 py-20 px-2 md:px-20">
@@ -25,11 +30,18 @@ export default function CTA() {
               id="email"
               name="email"
               placeholder="Enter Business Email"
+              defaultValue={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
               className="outline-none py-2 px-4 rounded-l-full border border-borderClr"
             />
-            <button className="px-4 py-2 font-medium rounded-r-full border border-[#D4AA53] text-[#240029] bg-[#fc1]">
+            <Link
+              href={`/join?be=${email}`}
+              className="px-4 py-2 font-medium rounded-r-full border border-[#D4AA53] text-[#240029] bg-[#fc1]"
+            >
               Join Waitlist
-            </button>
+            </Link>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">

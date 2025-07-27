@@ -1,8 +1,12 @@
-import Navbar from "@/components/Navbar";
+"use client";
 
-import React from "react";
+import Navbar from "@/components/Navbar";
+import Link from "next/link";
+
+import React, { useState } from "react";
 
 export default function Hero() {
+  const [email, setEmail] = useState("");
   const CheatTools = [
     {
       name: "ChatGPT",
@@ -74,11 +78,18 @@ export default function Hero() {
                 id="email"
                 name="email"
                 placeholder="Enter Business Email"
+                defaultValue={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
                 className="outline-none py-2 px-4 rounded-l-full border border-borderClr"
               />
-              <button className="px-4 py-2  font-medium rounded-r-full border border-[#D4AA53] text-[#240029] bg-[#fc1]">
+              <Link
+                href={`/join?be=${email}`}
+                className="px-4 py-2  font-medium rounded-r-full border border-[#D4AA53] text-[#240029] bg-[#fc1]"
+              >
                 Join Waitlist
-              </button>
+              </Link>
             </div>
 
             {/* companies section */}
