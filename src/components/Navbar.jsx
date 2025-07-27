@@ -12,20 +12,21 @@ export default function Navbar() {
       href: "#problem",
     },
     {
+      name: "Solution",
+      href: "#solution",
+    },
+    {
       name: "About",
-      href: "/",
+      href: "#about",
     },
     {
-      name: "How it works",
-      href: "/",
+      name: "Built for",
+      href: "#bfor",
     },
+
     {
-      name: "Pricing",
-      href: "/",
-    },
-    {
-      name: "Contact",
-      href: "/",
+      name: "Calculate ROI",
+      href: "#roi",
     },
   ];
   return (
