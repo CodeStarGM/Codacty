@@ -3,7 +3,7 @@ import React from "react";
 export default function CTA() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#FFDDDE] via-[#FFF1BD] to-[#FFD84A] border rounded-3xl text-gray-900 py-20 px-6 md:px-20">
+      <section className="bg-gradient-to-br from-[#FFDDDE] via-[#FFF1BD] to-[#FFD84A] border rounded-3xl text-gray-900 py-20 px-2 md:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 font_k text-purp">
             Sign Up Early to Save{" "}
@@ -19,7 +19,7 @@ export default function CTA() {
             If you’re tired of AI-fueled fraud in hiring, jump on the waitlist.
           </p>
 
-          <div className="w-fit mx-auto flex items-center rounded-full">
+          <div className="lg:w-fit mx-auto flex items-center rounded-full w-full lg:text-base text-sm">
             <input
               type="email"
               id="email"
