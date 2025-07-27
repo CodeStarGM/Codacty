@@ -10,7 +10,7 @@ export default function Solution() {
           <p className="text-[#fc1] bg-purp w-fit font-semibold px-4 py-1 rounded-lg text-lg uppercase font-[family-name:var(--font-kaio)]">
             The Solution {":)"}
           </p>
-          <h3 className="font-[family-name:var(--font-kaio)] text-5xl font-extrabold text-purp leading-tight ">
+          <h3 className="font-[family-name:var(--font-kaio)] text-4xl lg:text-5xl font-extrabold text-purp leading-tight ">
             <span className="text-green-500">Finally,</span> A Hiring Platform
             That Sends You Real Engineers - Not Good Cheaters
           </h3>
