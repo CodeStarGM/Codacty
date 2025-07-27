@@ -9,7 +9,7 @@ export default function Problem() {
           <p className="text-[#fc1] bg-purp w-fit font-semibold px-4 py-1 rounded-lg text-lg uppercase font-[family-name:var(--font-kaio)]">
             The Problem {":("}
           </p>
-          <h3 className="font-[family-name:var(--font-kaio)] text-5xl font-extrabold text-purp leading-tight ">
+          <h3 className="font-[family-name:var(--font-kaio)] lg:text-5xl text-4xl font-extrabold text-purp leading-tight ">
             Hiring is{" "}
             <span className="inline-block rotate-[-6deg] text-red-600">B</span>
             <span className="inline-block rotate-[12deg] -translate-y-1 text-red-600">
