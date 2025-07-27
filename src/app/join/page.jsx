@@ -7,7 +7,7 @@ import { useSearchParams } from "next/navigation";
 
 import React, { useState } from "react";
 
-export default function Hero() {
+export default function JoinWaitlist() {
   const [email, setEmail] = useState("");
 
   const searchParams = useSearchParams();
