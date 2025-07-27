@@ -34,7 +34,7 @@ export default function Solutions() {
               </div>
 
               <p className="font-medium  text-gray-800 ">
-                Codacty uses smart eye and gesture tracking to catch suspicious
+                codis uses smart eye and gesture tracking to catch suspicious
                 behavior in real time without recording video or taking
                 screenshots. We lock tabs, block shortcuts, and instantly flag
                 second devices, so you can trust every result.
@@ -71,7 +71,7 @@ export default function Solutions() {
                   </p>
                 </div>
                 <p className="font-medium  text-gray-800 ">
-                  Codacty keeps everything private and is fully GDPR and CCPA
+                  codis keeps everything private and is fully GDPR and CCPA
                   compliant. We never record videos or take screenshots. All
                   candidate information stays safe and under their control, so
                   you don’t have to worry about privacy issues.
@@ -108,7 +108,7 @@ export default function Solutions() {
                 </div>
 
                 <p className="font-medium  text-gray-800 ">
-                  Codacty gives you clear assessment results and shows any
+                  codis gives you clear assessment results and shows any
                   cheating activity. It automatically picks out the best
                   candidates and only shows you resumes that match what you
                   need. No extra work for your team.

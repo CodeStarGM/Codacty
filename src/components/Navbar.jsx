@@ -71,7 +71,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 ">
           <LoaderPinwheel className="size-8" />
           <p className="hidden lg:block font-[family-name:var(--font-kaio)] text-2xl">
-            Codacty
+            codis
           </p>
         </div>
 

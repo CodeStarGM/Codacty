@@ -19,7 +19,7 @@ export default function JoinWaitlist() {
             <div className="flex items-center gap-2 ">
               <LoaderPinwheel className="size-8" />
               <p className="hidden lg:block font-[family-name:var(--font-kaio)] text-2xl">
-                Codacty
+                codis
               </p>
             </div>
 
@@ -65,7 +65,7 @@ export default function JoinWaitlist() {
               <input
                 type="hidden"
                 name="subject"
-                value="Codacty Interview AI Waitlist Submission"
+                value="codis Interview AI Waitlist Submission"
               />
 
               <div className="border-b border-gray-900/10 pb-12 ">

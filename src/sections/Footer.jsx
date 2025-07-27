@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="mt-8 text-center text-xs text-gray-500">
-            © 2025 Codacty. All rights reserved.
+            © 2025 codis. All rights reserved.
           </div>
 
           {/* Right: Links */}

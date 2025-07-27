@@ -45,7 +45,7 @@ export default function FixHiring() {
 
           <div className="mt-16  mx-auto text-center flex flex-col items-center justify-center">
             <h3 className="text-2xl font_k md:text-3xl font-semibold text-white mb-4">
-              Codacty Solves All 3:
+              codis Solves All 3:
             </h3>
 
             <ul className=" lg:text-lg gap-4 flex-wrap text-gray-200 flex  items-start justify-center">

@@ -5,7 +5,7 @@ export default function ROICalculator() {
   const [screeningHoursPerWeek, setScreeningHoursPerWeek] = useState(10);
   const [hrHourlyRate, setHrHourlyRate] = useState(50);
 
-  const timeSavedRatio = 0.8; // Codacty saves ~80% of screening time
+  const timeSavedRatio = 0.8; // codis saves ~80% of screening time
   const yearlyHoursSaved = (
     screeningHoursPerWeek *
     timeSavedRatio *
@@ -67,7 +67,7 @@ export default function ROICalculator() {
               </label>
               <p className="text-2xl font-bold text-[#fc1]">80%</p>
               <p className="text-sm text-gray-400">
-                Based on actual Codacty users reducing resume screening and test
+                Based on actual codis users reducing resume screening and test
                 review time
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function ROICalculator() {
 
           <div>
             <h3 className="text-4xl font-bold font_k">${totalRoi}</h3>
-            <p className="text-sm mt-1">Total yearly ROI with Codacty</p>
+            <p className="text-sm mt-1">Total yearly ROI with codis</p>
           </div>
 
           <div>

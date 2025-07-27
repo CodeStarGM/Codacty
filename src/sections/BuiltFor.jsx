@@ -9,8 +9,8 @@ export default function BuiltFor() {
             Built for Startups, Scaleups & Enterprises
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Whether you're hiring for a team of 2 or 2,000, Codacty adapts to
-            your workflow.
+            Whether you're hiring for a team of 2 or 2,000, codis adapts to your
+            workflow.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">

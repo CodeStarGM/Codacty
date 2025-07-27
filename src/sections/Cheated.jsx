@@ -91,12 +91,12 @@ export default function Cheated() {
             but
             <span className="text-2xl font-semibold text-[#fc1]">
               {" "}
-              Codacty
+              codis
             </span>{" "}
             is.
           </p>
           {/* <p className="font-semibold text-green-300 bg-green-900/40 border-l-4 border-green-500 px-6 py-2 inline-block rounded">
-            Codacty neutralizes second devices, AI answers, and
+            codis neutralizes second devices, AI answers, and
             attention-hopping — before the test even starts.
           </p> */}
         </div>

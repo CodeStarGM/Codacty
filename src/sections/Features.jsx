@@ -42,7 +42,7 @@ export default function Features() {
       <div className=" py-14 px-20">
         <Headings
           title="Everything You Need to Hire Smarter"
-          desc="Codacty makes it simple to test skills, prevent cheating, and hire the right people, all without the noise or hassle."
+          desc="codis makes it simple to test skills, prevent cheating, and hire the right people, all without the noise or hassle."
         />
 
         <div className="space-y-2">
