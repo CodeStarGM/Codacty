@@ -48,7 +48,7 @@ export default function FixHiring() {
               Codacty Solves All 3:
             </h3>
 
-            <ul className=" text-lg gap-4 flex-wrap text-gray-200 flex  items-start justify-center">
+            <ul className=" lg:text-lg gap-4 flex-wrap text-gray-200 flex  items-start justify-center">
               <li className="flex items-center gap-2">
                 <CircleCheckBig className="fill-green-500/50 stroke-green-400 size-8" />{" "}
                 <span> Fair, fast hiring</span>
