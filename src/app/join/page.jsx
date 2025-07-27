@@ -1,15 +1,12 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
 import { LoaderPinwheel, Menu, MoveRight } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-import React, { useState } from "react";
+import React from "react";
 
 export default function JoinWaitlist() {
-  const [email, setEmail] = useState("");
-
   const searchParams = useSearchParams();
   const businessEmail = searchParams.get("be");
 
@@ -39,15 +36,6 @@ export default function JoinWaitlist() {
                 <span>Go Back</span>
                 <MoveRight className="group-hover:translate-x-2 transition-all duration-300" />
               </Link>
-
-              <button
-                onClick={() => {
-                  setToggleMobileMenu(!toggleMobileMenu);
-                }}
-                className="lg:hidden flex"
-              >
-                <Menu className="size-8" />
-              </button>
             </div>
           </nav>
           {/* navbar end */}
