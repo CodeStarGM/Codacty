@@ -22,7 +22,7 @@ export default function ROICalculator() {
   ).toLocaleString();
 
   return (
-    <section className=" text-[#240029] py-20 px-6 md:px-20">
+    <section id="roi" className=" text-[#240029] py-20 px-6 md:px-20">
       <div className="max-w-4xl mx-auto bg-[#32003b]/95 rounded-2xl grid md:grid-cols-2 items-center">
         {/* Left: Form */}
         <div className="text-white bg-transparent rounded-xl p-8 shadow-2xl space-y-6">

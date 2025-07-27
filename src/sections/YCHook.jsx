@@ -3,7 +3,10 @@ import React from "react";
 export default function YCHook() {
   return (
     <>
-      <section className="bg-[#240029] text-white py-20 px-6 md:px-20">
+      <section
+        id="about"
+        className="bg-[#240029] text-white py-20 px-6 md:px-20"
+      >
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 font_k">
             We’re Not Just Another Hiring Tool.

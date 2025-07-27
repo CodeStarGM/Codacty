@@ -3,7 +3,7 @@ import React from "react";
 export default function BuiltFor() {
   return (
     <>
-      <section className="bg-white text-gray-900 py-20 px-6 md:px-20">
+      <section id="bfor" className="bg-white text-gray-900 py-20 px-6 md:px-20">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 font_k text-purp">
             Built for Startups, Scaleups & Enterprises

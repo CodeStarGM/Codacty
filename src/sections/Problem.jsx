@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Problem() {
   return (
-    <section className="py-24 bg-white text-gray-900">
+    <section id="problem" className="py-24 bg-white text-gray-900">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
         {/* LEFT: Sticky Headline + Subhead */}
         <div className="space-y-6 md:sticky md:top-24 self-start">
